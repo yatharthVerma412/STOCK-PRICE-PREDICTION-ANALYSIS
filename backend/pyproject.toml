@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-prediction-backend"
+version = "0.1.0"
+description = "Stock Price Analysis & Prediction API"
+requires-python = ">=3.8"
+
+[tool.pylsp-mypy]
+enabled = false
+
+[tool.ruff]
+ignore = ["E501", "F401", "F403", "F405"]
+
+[tool.pytest.ini_options]
+addopts = "--disable-warnings"
+
+
+
